@@ -24,7 +24,7 @@
         
         .dossier-page {
             width: 210mm;
-            min-height: 297mm;
+            min-height: auto;
             background: white;
             margin: 0 auto;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -156,10 +156,6 @@
             text-decoration: underline;
         }
         
-        .page-break {
-            page-break-before: always;
-        }
-        
         .tag {
             display: inline-block;
             background: #3498db;
@@ -186,7 +182,6 @@
     </style>
 </head>
 <body>
-    <!-- PÁGINA 1 -->
     <div class="dossier-page">
         <!-- Encabezado -->
         <div class="header">
@@ -250,13 +245,7 @@
             <p><strong>Solución:</strong> Plataforma inteligente que proporciona retroalimentación automática y personalizada para mejorar habilidades de escritura académica.</p>
             <p><strong>Impacto:</strong> Mejora del 40% en calidad de escritura, reducción del 60% en tiempo de corrección docente.</p>
         </div>
-    </div>
 
-    <!-- PÁGINA 2 -->
-    <div class="dossier-page page-break">
-        <!-- Continuación de Casos de Estudio -->
-        <h2 class="section-title">Más Soluciones Desarrolladas</h2>
-        
         <div class="case-study">
             <h5><i class="fas fa-comments"></i> Diálogos Filosóficos</h5>
             <p><strong>Contexto:</strong> Necesidad de herramienta interactiva para enseñanza de filosofía en entornos digitales.</p>
