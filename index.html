@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier de Servicios - Moris Polanco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f8f9fa;
+        }
+        
+        .dossier-page {
+            width: 210mm;
+            min-height: 297mm;
+            background: white;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 20mm;
+            position: relative;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            color: #7f8c8d;
+            font-weight: 300;
+        }
+        
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 20px;
+            margin: 25px 0 15px 0;
+            padding-left: 15px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .bio-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid #3498db;
+        }
+        
+        .service-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .service-icon {
+            font-size: 24px;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        
+        .case-study {
+            background: #f8f9fa;
+            border-left: 4px solid #e74c3c;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .case-study h5 {
+            color: #e74c3c;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .pricing-table th,
+        .pricing-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .pricing-table th {
+            background: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .pricing-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .price {
+            font-weight: 600;
+            color: #27ae60;
+            font-size: 16px;
+        }
+        
+        .contact-info {
+            background: #2c3e50;
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .contact-info h4 {
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin: 2px;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        @media print {
+            .dossier-page {
+                box-shadow: none;
+                margin: 0;
+                padding: 15mm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- PÁGINA 1 -->
+    <div class="dossier-page">
+        <!-- Encabezado -->
+        <div class="header">
+            <h1><i class="fas fa-graduation-cap"></i> DOSSIER DE SERVICIOS</h1>
+            <p>Consultoría Especializada en Ética de IA y Transformación Educativa</p>
+            <p><strong>Dr. Moris Polanco Barrera</strong></p>
+        </div>
+
+        <!-- Biografía Resumida -->
+        <div class="bio-card">
+            <h2 class="section-title">Perfil Profesional</h2>
+            <p>Doctor en Filosofía por la Universidad de Navarra (Cum Laude por unanimidad) con más de 30 años de experiencia académica y desarrollador de aplicaciones de Inteligencia Artificial. Mi perfil único combina <span class="highlight">profundidad humanística</span> con <span class="highlight">competencia técnica práctica</span>, posicionándome como un consultor especializado en la intersección de ética, educación y tecnología.</p>
+            
+            <p>Como <strong>Consultor Senior</strong>, ayudo a instituciones educativas, empresas tecnológicas y organizaciones a implementar soluciones de IA con responsabilidad ética y visión humanista. Mi experiencia como Director Académico, investigador y desarrollador me permite ofrecer perspectivas integrales que pocos profesionales pueden proporcionar en el mercado actual.</p>
+            
+            <div style="margin-top: 15px;">
+                <span class="tag">Miembro Academia Guatemalteca de la Lengua</span>
+                <span class="tag">Autor de 24+ libros</span>
+                <span class="tag">900+ aplicaciones IA</span>
+                <span class="tag">Premio Stillman 2016, 2018</span>
+            </div>
+        </div>
+
+        <!-- Servicios de Consultoría -->
+        <h2 class="section-title">Servicios de Consultoría</h2>
+        
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+            <h4>Ética e Implementación de IA</h4>
+            <p>Auditoría ética de sistemas de inteligencia artificial, desarrollo de marcos normativos y capacitación especializada para equipos técnicos. Identifico riesgos morales en algoritmos y propongo soluciones responsables para la implementación de tecnología.</p>
+            <p><strong>Ideal para:</strong> Empresas tecnológicas, startups de IA, comités éticos universitarios, instituciones gubernamentales.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h4>Transformación Educativa con IA</h4>
+            <p>Diseño e implementación de soluciones educativas basadas en inteligencia artificial. Desarrollo de herramientas personalizadas para instituciones educativas que mejoran el aprendizaje, la evaluación y la gestión académica mediante tecnología responsable.</p>
+            <p><strong>Ideal para:</strong> Universidades, instituciones educativas, plataformas EdTech, ministerios de educación.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+            <h4>Estrategia y Pensamiento Crítico</h4>
+            <p>Asesoría estratégica para instituciones y empresas en la adopción de tecnologías emergentes. Enfoque en el desarrollo de pensamiento crítico y toma de decisiones éticas en la era digital, combinando análisis filosófico con aplicación práctica.</p>
+            <p><strong>Ideal para:</strong> Directivos, equipos de innovación, think tanks, organizaciones en transformación digital.</p>
+        </div>
+
+        <!-- Mini Casos de Estudio -->
+        <h2 class="section-title">Casos de Estudio: Soluciones Desarrolladas</h2>
+        
+        <div class="case-study">
+            <h5><i class="fas fa-balance-scale"></i> Analizador de Contenido Ético</h5>
+            <p><strong>Contexto:</strong> Institución educativa necesitaba evaluar materiales digitales para identificar sesgos y contenido inapropiado.</p>
+            <p><strong>Solución:</strong> Desarrollo de aplicación web que analiza contenido textual desde perspectiva ética, identificando sesgos de género, culturales y proponiendo mejoras.</p>
+            <p><strong>Impacto:</strong> Reducción del 85% en contenido sesgado, mejora en calidad educativa y cumplimiento de estándares éticos.</p>
+        </div>
+
+        <div class="case-study">
+            <h5><i class="fas fa-robot"></i> Tutor de Redacción AI</h5>
+            <p><strong>Contexto:</strong> Universidad con altos índices de problemas de escritura en estudiantes de primer año.</p>
+            <p><strong>Solución:</strong> Plataforma inteligente que proporciona retroalimentación automática y personalizada para mejorar habilidades de escritura académica.</p>
+            <p><strong>Impacto:</strong> Mejora del 40% en calidad de escritura, reducción del 60% en tiempo de corrección docente.</p>
+        </div>
+    </div>
+
+    <!-- PÁGINA 2 -->
+    <div class="dossier-page page-break">
+        <!-- Continuación de Casos de Estudio -->
+        <h2 class="section-title">Más Soluciones Desarrolladas</h2>
+        
+        <div class="case-study">
+            <h5><i class="fas fa-comments"></i> Diálogos Filosóficos</h5>
+            <p><strong>Contexto:</strong> Necesidad de herramienta interactiva para enseñanza de filosofía en entornos digitales.</p>
+            <p><strong>Solución:</strong> Aplicación que simula conversaciones filosóficas con IA, permitiendo a estudiantes explorar conceptos complejos mediante diálogo interactivo.</p>
+            <p><strong>Impacto:</strong> Aumento del 75% en participación estudiantil, mejora comprensión de conceptos abstractos.</p>
+        </div>
+
+        <div class="case-study">
+            <h5><i class="fas fa-brain"></i> LectorInteligente</h5>
+            <p><strong>Contexto:</strong> Dificultades en comprensión lectora en estudiantes de nivel medio.</p>
+            <p><strong>Solución:</strong> Plataforma adaptativa que personaliza ejercicios de comprensión lectora según nivel académico y progreso individual.</p>
+            <p><strong>Impacto:</strong> Mejora del 50% en comprensión lectora, alta motivación estudiantil mediante gamificación.</p>
+        </div>
+
+        <!-- Estructura de Precios -->
+        <h2 class="section-title">Estructura de Precios Orientativa</h2>
+        <p class="text-muted">Los precios pueden variar según complejidad, duración y requisitos específicos del proyecto.</p>
+        
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Descripción</th>
+                    <th>Precio Orientativo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Taller de Ética de IA</strong></td>
+                    <td>Sesión de 2 horas para equipos directivos sobre implementación responsable de IA</td>
+                    <td class="price">$500</td>
+                </tr>
+                <tr>
+                    <td><strong>Auditoría Ética de IA</strong></td>
+                    <td>Análisis completo de sistemas de IA, informe detallado y recomendaciones</td>
+                    <td class="price">Desde $700</td>
+                </tr>
+                <tr>
+                    <td><strong>Desarrollo de Marco Ético</strong></td>
+                    <td>Creación de políticas y procedimientos éticos para implementación de IA</td>
+                    <td class="price">Desde $1,200</td>
+                </tr>
+                <tr>
+                    <td><strong>Consultoría Educativa IA</strong></td>
+                    <td>Diseño de estrategia para integración de IA en institución educativa</td>
+                    <td class="price">Desde $900</td>
+                </tr>
+                <tr>
+                    <td><strong>Capacitación Especializada</strong></td>
+                    <td>Formación para equipos técnicos en ética aplicada a desarrollo de IA</td>
+                    <td class="price">$400 por sesión</td>
+                </tr>
+                <tr>
+                    <td><strong>Desarrollo a Medida</strong></td>
+                    <td>Creación de aplicaciones educativas o herramientas de análisis ético</td>
+                    <td class="price">Presupuesto personalizado</td>
+                </tr>
+                <tr>
+                    <td><strong>Retainer Mensual</strong></td>
+                    <td>Asesoría continua (10-15 horas mensuales) para proyectos estratégicos</td>
+                    <td class="price">Desde $1,500/mes</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Información de Contacto -->
+        <div class="contact-info">
+            <h4><i class="fas fa-envelope"></i> Iniciemos una Conversación</h4>
+            <p>Estoy disponible para discutir cómo mis servicios pueden ayudar a su organización a implementar tecnología inteligente con responsabilidad ética y visión humanista.</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p><i class="fas fa-user"></i> <strong>Dr. Moris Polanco Barrera</strong></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:morispolanco@gmail.com">morispolanco@gmail.com</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:mp@ufm.edu">mp@ufm.edu</a></p>
+                    <p><i class="fas fa-phone"></i> +502 3764 8910</p>
+                </div>
+                <div class="col-md-6">
+                    <p><i class="fas fa-globe"></i> <a href="https://morispolanco.github.io/etica/">morispolanco.github.io/etica/</a></p>
+                    <p><i class="fas fa-globe"></i> <a href="https://morispolanco.github.io/edu/">morispolanco.github.io/edu/</a></p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/moris-polanco-barrera/">linkedin.com/in/moris-polanco-barrera</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/morispolanco">github.com/morispolanco</a></p>
+                </div>
+            </div>
+            
+            <div class="mt-4">
+                <p><strong>Horario de Consultoría:</strong><br>
+                Lunes a Viernes: 11:00 a.m. - 5:00 p.m. (GMT-6)<br>
+                Sesiones disponibles en línea o por videoconferencia</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e9ecef; color: #7f8c8d; font-size: 12px;">
+            <p>&copy; 2024 Dr. Moris Polanco Barrera | Todos los derechos reservados</p>
+            <p>Documento confidencial | Versión 1.0</p>
+        </div>
+    </div>
+</body>
+</html>
